@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pok&eacute;dex</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="main.js" ></script>
+  </head>
+  <body>
+    <header>
+    </header>
+    <main id="content">
+      <section class="title">
+        <div class="well well-lg">
+          <h3>POK&Eacute;DEX</h3>
+        </div>    
+      </section>
+      <section>
+        <div class="navegacion-pokemones">
+          <div class="navegacion-izquierda">
+            <button class="btn btn-basic" onclick="pintarpokemonanterior();">Anterior</button>
+          </div>
+          <div class="navegacion-central">
+            <span>Id Pokemon:&#160;&#160;&#160;</span><input type="number" id="idbuscadorpokemon" size="5">
+            <span><button class="btn btn-warning btn-xs" onclick="buscarpokemon();">Buscar</button></span>
+          </div>
+          <div class="navegacion-derecha">
+            <button class="btn btn-basic" onclick="pintarpokemonsiguiente();">Siguiente</button>
+          </div>
+        </div>
+      </section>
+      <br>
+      <section id="contenedorpokemon" class="list-group">   
+      </section>
+      </main>
+</body>
+</html> 
